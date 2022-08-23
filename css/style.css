@@ -1,0 +1,18 @@
+header {
+    margin-top: 0px;
+    position: sticky;
+    top: 0px;
+    border-bottom: solid #6583f3 3px;
+    background-color: #6583f3;
+    z-index: 999;
+}
+
+header nav a{
+    color: black;
+}
+
+header span:hover{
+    color: white;
+}
+
+.filterable{margin-top:15px}.filterable .panel-heading .pull-right{margin-top:-20px}.filterable .filters input[disabled]{background-color:transparent;border:none;cursor:auto;box-shadow:none;padding:0;height:auto}.filterable .filters input[disabled]::-webkit-input-placeholder{color:#333}.filterable .filters input[disabled]::-moz-placeholder{color:#333}.filterable .filters input[disabled]:-ms-input-placeholder{color:#333}

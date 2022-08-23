@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/paper/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/site-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <style>
+        *{
+            font-size: medium;
+        }
+    </style>
+
+    <title>Alumni</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="text-gray-600 body-font w-full h-28">
+        <div class="container mx-auto flex flex-wrap p-7 pr-10 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="index.html" style="text-decoration: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M23.739.293c-.392-.391-1.026-.391-1.417 0l-4.304 4.303c-2.571-1.836-6.31-1.481-8.789.998l-3.646 3.65c-2.479 2.478-2.835 6.213-.999 8.788l-4.259 4.258c-.392.392-.391 1.024 0 1.415.392.392 1.025.394 1.417.002l4.259-4.26c2.572 1.837 6.311 1.48 8.788-.998l3.649-3.649c2.478-2.478 2.834-6.215.996-8.789l4.305-4.302c.391-.39.391-1.025 0-1.416zm-6.718 13.09l-3.648 3.649c-1.683 1.682-4.149 2.025-5.925.968l2.738-2.736c.39-.392.39-1.026-.002-1.418-.39-.39-1.024-.39-1.416.001l-2.736 2.737c-1.058-1.777-.713-4.242.967-5.924l3.648-3.649c1.682-1.681 4.148-2.024 5.924-.966l-2.736 2.735c-.392.392-.391 1.025-.002 1.417.393.39 1.027.392 1.417 0l2.737-2.737c1.058 1.775.715 4.243-.966 5.923z" />
+                </svg>
+                <span class="ml-3 text-4xl ">Joiner</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-white" style="text-decoration: none;" href="college.html">College</a>
+                <a class="mr-5 hover:text-white" style="text-decoration: none;" href="alumni.html">Alumni</a>
+                <a class="mr-5 hover:text-white" style="text-decoration: none;" href="newsroom.html">Newsroom</a>
+                <a class="mr-5 hover:text-white" style="text-decoration: none;" href="about.html">About Us</a>
+            </nav>
+            <button
+                class="inline-flex items-center bg-gray-100 border-0 py-3 px-5 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+                style="align-items: center;">
+                <a href="#" target="_blank" style="text-decoration: none;">
+                    Login/Signup
+                </a>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- header -->
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl  font-extrabold title-font mb-4 text-gray-900" style="font-size: 2.3rem;">Alumni Network</h1>
+                <p class="lg:w-2/3 text-3xl mx-auto leading-relaxed">Welcome to the Alumni Network! <br> We are a
+                    community of alumni and friends who support each other in our professional and personal pursuits.
+                </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="panel panel-primary filterable">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <button class="btn btn-default btn-xs btn-filter"><span
+                                        class="glyphicon glyphicon-filter"></span>Click To Apply Filter</button>
+                            </h3>
+        
+                        </div>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr class="filters">
+                                    <th class="w-28"><input type="text" class="form-control text-center"  placeholder="S.No." disabled></th>
+                                    <th><input type="text" class="form-control text-center" placeholder="Name" disabled></th>
+                                    <th><input type="text" class="form-control text-center" placeholder="Batch" disabled></th>
+                                    <th style="font-size: medium; color: black;" class="text-center">Linkedin Profile</th>
+                                    <th><input type="text" class="form-control text-center" placeholder="Department" disabled></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">1.</td>
+                                    <td class="p-2 border-b border-l text-center">Neha Pendem </td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/nehapendem" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">2.</td>
+                                    <td class="p-2 border-b border-l text-center">Kanishka Sutrave  </td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/kanishka-sutrave" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">3.</td>
+                                    <td class="p-2 border-b border-l text-center">Chakradhar S </td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/chakradhar-s-156a13190" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">4.</td>
+                                    <td class="p-2 border-b border-l text-center">Rishika Rednam </td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/rishikarednam" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">5.</td>
+                                    <td class="p-2 border-b border-l text-center">Dharani Kumar Reddy Gowra </td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/dharani-kumar-reddy-gowra-a80814193" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">6.</td>
+                                    <td class="p-2 border-b border-l text-center">Nihal Vatti</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/nihal-vatti-949452171" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">7.</td>
+                                    <td class="p-2 border-b border-l text-center">Durga Bhavani Chunduri </td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/durga-bhavani-chunduri-1a10b1168" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">8.</td>
+                                    <td class="p-2 border-b border-l text-center">Navya Madhavarapu</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/navyamadhavarapu8799" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">9.</td>
+                                    <td class="p-2 border-b border-l text-center">Vinoothna Sree</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/vinoothna-sree-1b0342166" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">10.</td>
+                                    <td class="p-2 border-b border-l text-center">Ankitha Samineni</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/ankitha-samineni-aa2a8b160" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">MCA</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">11.</td>
+                                    <td class="p-2 border-b border-l text-center">Sathvik Surabhi</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/sathvik-surabhi-156392187" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">12.</td>
+                                    <td class="p-2 border-b border-l text-center">Farooqunnisa</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/farooqunnisa-5a24b1194" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">13.</td>
+                                    <td class="p-2 border-b border-l text-center">Hruday Tej Akkaladevi</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/hruday-tej" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">14.</td>
+                                    <td class="p-2 border-b border-l text-center">Rishika A</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/rishika-a-9109b923a" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">Bio Tech</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">15.</td>
+                                    <td class="p-2 border-b border-l text-center">Srisdhar Kandi</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/sridhar-kandi-932981181" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">16.</td>
+                                    <td class="p-2 border-b border-l text-center">Indu Reddy Bogala</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/indu-reddy-bogala-49051b172" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">17.</td>
+                                    <td class="p-2 border-b border-l text-center">Manideep Laxmishetty</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/manideep-laxmishetty-3672b6169" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">18.</td>
+                                    <td class="p-2 border-b border-l text-center">Jani Miya Shaik </td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/jani-miya-shaik-7921141a4" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">19.</td>
+                                    <td class="p-2 border-b border-l text-center">A S N Yashwanth</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/a-s-n-yashwanth-1b0a911b4" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">EEE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">20.</td>
+                                    <td class="p-2 border-b border-l text-center">Vashista Basava </td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/vashista-basava-5b1349228" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">EEE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">21.</td>
+                                    <td class="p-2 border-b border-l text-center">Harshith Reddy</td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/harshith-reddy-1472a01b2" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">EEE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">22.</td>
+                                    <td class="p-2 border-b border-l text-center">Mahesh Baswaraj </td>
+                                    <td class="p-2 border-b border-l text-center">2017-2021</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/maheshbaswaraj" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">MCA</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">23.</td>
+                                    <td class="p-2 border-b border-l text-center">Goutham Jawahar Reddy</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/goutham-jawahar-reddy" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">MBA</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">24.</td>
+                                    <td class="p-2 border-b border-l text-center">Muthyam Reddy Moku </td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/muthyam-reddy-moku-4a1966227" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">25.</td>
+                                    <td class="p-2 border-b border-l text-center">Ramyatha Penumalla </td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/ramyatha-penumalla-380389193" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">26.</td>
+                                    <td class="p-2 border-b border-l text-center">Palakitee Bhavani bindusri  </td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/palakitee-bhavani-bindusri-734b76175" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">Civil</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">27.</td>
+                                    <td class="p-2 border-b border-l text-center">Sainath Raddy </td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/sainath-reddy-b2468a193" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">Mech</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">28.</td>
+                                    <td class="p-2 border-b border-l text-center">Srinidhi Byreddy</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/srinidhi-byreddy-6970441b9" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">29.</td>
+                                    <td class="p-2 border-b border-l text-center">Vineeth Sai A</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/lohitha-maradani-4b430b201" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">Chemical</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">30.</td>
+                                    <td class="p-2 border-b border-l text-center">Lohitha Maradani</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/lohitha-maradani-4b430b201" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">31.</td>
+                                    <td class="p-2 border-b border-l text-center">Sumeeraja K. </td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/sumeerajakudala" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">32.</td>
+                                    <td class="p-2 border-b border-l text-center">Thamiz Bharthepudi </td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/tamiz-bharthepudy-11075a222" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">33.</td>
+                                    <td class="p-2 border-b border-l text-center">Praneeth Prasad</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/praneeth-prasad-vemuluri-515974147" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">34.</td>
+                                    <td class="p-2 border-b border-l text-center">Geethika Ch</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/geethika-ch-27659515b" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">35.</td>
+                                    <td class="p-2 border-b border-l text-center">Srikanth Mamidala</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/srikanth-mamidala-23a70b197" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">36.</td>
+                                    <td class="p-2 border-b border-l text-center">Sai Sunanyan</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/sai-sunayan-a06b471b9" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">EEE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">37.</td>
+                                    <td class="p-2 border-b border-l text-center">Lakshmi Rajyam Balla</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/lakshmi-rajyam-balla-aa2a7a209" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">MCA</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">38.</td>
+                                    <td class="p-2 border-b border-l text-center">Akash Nampalli </td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/akash-nampalli-a23012182" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">MCA</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">39.</td>
+                                    <td class="p-2 border-b border-l text-center">Krishna Abhishith</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/krishna-abhishith-purihella-212224194" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">EEE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">40.</td>
+                                    <td class="p-2 border-b border-l text-center">Sanganabhatla Sai Manideep</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/sanganabhatla-sai-manideep-75b2011b8" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">41.</td>
+                                    <td class="p-2 border-b border-l text-center">Seinivas Reddy</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/srinivas-reddy-88856520a" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">MCA</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">42.</td>
+                                    <td class="p-2 border-b border-l text-center">Shivani Nayakam</td>
+                                    <td class="p-2 border-b border-l text-center">2016-2020</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/shivani-nayakam" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">43.</td>
+                                    <td class="p-2 border-b border-l text-center">Gopi Krishna P.M.V</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/pmvgk" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">44.</td>
+                                    <td class="p-2 border-b border-l text-center">Sravya Chowderpally </td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/sravya33" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">45.</td>
+                                    <td class="p-2 border-b border-l text-center">Varun Rishikanth Rangannagari </td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/varun-rishikanth-rangannagari" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">46.</td>
+                                    <td class="p-2 border-b border-l text-center">Ujwal KT</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/ujwal-kt" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">47.</td>
+                                    <td class="p-2 border-b border-l text-center">Sridurga Balahoju</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/sridurga-balahoju-3052b0213" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">Mech</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">48.</td>
+                                    <td class="p-2 border-b border-l text-center">Nikhil Madhunala </td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/nikhil-madhunala-8463761b8" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">49.</td>
+                                    <td class="p-2 border-b border-l text-center">Muthukuru BhargavReddy</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/bhargavreddymuthukuru" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">50.</td>
+                                    <td class="p-2 border-b border-l text-center">Akhila Billakanti </td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/akhila-billakanti-807689127" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">51.</td>
+                                    <td class="p-2 border-b border-l text-center">Manasa Vugge</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/manasa-vugge-870745147" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">EEE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">52.</td>
+                                    <td class="p-2 border-b border-l text-center">Srujanvesh Kotha </td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/srujanvesh-kotha-69061a148" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">53.</td>
+                                    <td class="p-2 border-b border-l text-center">Praveka Surapaneni </td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/praveka" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">54.</td>
+                                    <td class="p-2 border-b border-l text-center">Vishnu Vardhan Kyatham</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/vishnu-vardhan-kyatham-a64030146" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">55.</td>
+                                    <td class="p-2 border-b border-l text-center">Hareesh Gunda</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/hareeshgunda" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">56.</td>
+                                    <td class="p-2 border-b border-l text-center">Akshay Kumar Vuppala</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/akshaykumar-v-319176170" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">Mech</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">57.</td>
+                                    <td class="p-2 border-b border-l text-center">Anurag Sadula</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/anurag-sadula-ab3565159" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">58.</td>
+                                    <td class="p-2 border-b border-l text-center">Spandana Chede</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/spandana-chede-10871912a" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">IT</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">59.</td>
+                                    <td class="p-2 border-b border-l text-center">Ashvik Mylarapu </td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/ashvik-mylarapu-538675156" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">CSE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">60.</td>
+                                    <td class="p-2 border-b border-l text-center">Madhuri Kandi </td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/madhuri-kandi-mk22052019" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">61.</td>
+                                    <td class="p-2 border-b border-l text-center">Manikanta G</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/manikantag0504" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">Mech</td>
+                                </tr>
+                                <tr class="odd:bg-gray-100 hover:!bg-stone-200">
+                                    <td class="p-2 border-b border-l text-center">62.</td>
+                                    <td class="p-2 border-b border-l text-center">Arun Vishnu Maddala</td>
+                                    <td class="p-2 border-b border-l text-center">2015-2019</td>
+                                    <td class="p-2 border-b border-l text-center"><a style="text-decoration: none;" href="https://www.linkedin.com/in/arun-vishnu-maddali-b51b52137" target="_blank">Click Here</a></td>
+                                    <td class="p-2 border-b border-l text-center">ECE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>No.of Rows : <span id="rowcount"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container p-10 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" style="text-decoration: none;"
+                href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M23.739.293c-.392-.391-1.026-.391-1.417 0l-4.304 4.303c-2.571-1.836-6.31-1.481-8.789.998l-3.646 3.65c-2.479 2.478-2.835 6.213-.999 8.788l-4.259 4.258c-.392.392-.391 1.024 0 1.415.392.392 1.025.394 1.417.002l4.259-4.26c2.572 1.837 6.311 1.48 8.788-.998l3.649-3.649c2.478-2.478 2.834-6.215.996-8.789l4.305-4.302c.391-.39.391-1.025 0-1.416zm-6.718 13.09l-3.648 3.649c-1.683 1.682-4.149 2.025-5.925.968l2.738-2.736c.39-.392.39-1.026-.002-1.418-.39-.39-1.024-.39-1.416.001l-2.736 2.737c-1.058-1.777-.713-4.242.967-5.924l3.648-3.649c1.682-1.681 4.148-2.024 5.924-.966l-2.736 2.735c-.392.392-.391 1.025-.002 1.417.393.39 1.027.392 1.417 0l2.737-2.737c1.058 1.775.715 4.243-.966 5.923z" />
+                </svg>
+                <span class="ml-3 text-3xl">Joiner</span>
+            </a>
+            <p class=" text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 text-xl sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2022 Joiner
+
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                return true;
+            }).catch(function (e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+
+</html>
